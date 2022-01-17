@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Planes">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element ref ="Airplane" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+
+  <xs:element name = "Airplane">
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="Model" type="ModelType"/>
+    <xs:element name="Origin" type="xs:string"/>
+    <xs:element name="Chars" type="CharsType" />
+    <xs:element name="Parameters" type="ParametersType"/>
+  </xs:sequence>
+  <xs:attribute type="xs:int" name="id" use="required"/>
+</xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ModelType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:double" name="Price" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="CharsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="capacity" use="optional"/>
+        <xs:attribute type="xs:int" name="passengers" use="optional"/>
+        <xs:attribute type="xs:int" name="crewSeats" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="ParametersType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:double" name="Length" use="optional"/>
+        <xs:attribute type="xs:double" name="Width" use="optional"/>
+        <xs:attribute type="xs:double" name="height" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>

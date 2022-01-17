@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Planes xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation = "Airplane1.xsd">
+
+    <Airplane id="1">
+        <Model Price ="4400000">Airbus A220</Model>
+        <Origin>Canada</Origin>
+        <Chars capacity="64" passengers="108" crewSeats ="8" >Пассажирский</Chars>
+        <Parameters Length="34.9" Width = "3.27" height ="2.13">Параметры</Parameters>
+    </Airplane>
+
+    <Airplane id="2">
+        <Model Price ="2000">Ту-204-100</Model>
+        <Origin>Russia</Origin>
+        <Chars capacity="76" passengers="0" crewSeats ="10" >Почтовый</Chars>
+        <Parameters Length="35.4" Width = "3.28" height ="2.35">Параметры</Parameters>
+    </Airplane>
+    <Airplane id="3">
+        <Model Price ="2000">Ил-76ТД</Model>
+        <Origin>Russia</Origin>
+
+        <Chars capacity="47" passengers="0" crewSeats ="7" >Пожарный</Chars>
+        <Parameters Length="37.7" Width = "3.34" height ="2.45">Параметры</Parameters>
+    </Airplane>
+    <Airplane id="4">
+        <Model Price ="2000">Ту-204-100с</Model>
+        <Origin>Russia</Origin>
+        <Chars capacity="103" passengers="0" crewSeats ="10" >Грузовой</Chars>
+        <Parameters Length="35.8" Width = "2.67" height ="2.56">Параметры</Parameters>
+    </Airplane>
+</Planes>
