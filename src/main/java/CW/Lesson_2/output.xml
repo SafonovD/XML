@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<factory>
+    <Candy id="01">
+        <title>Шоколадные</title>
+        <Manufacturer>Завод1</Manufacturer>
+    </Candy>
+    <Candy id="02">
+        <title>Карамельки</title>
+        <Manufacturer>Завод2</Manufacturer>
+    </Candy>
+    <Candy id="03">
+        <title>Ириски</title>
+        <Manufacturer>Завод3</Manufacturer>
+    </Candy>
+</factory>
