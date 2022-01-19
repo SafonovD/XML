@@ -56,9 +56,7 @@ public class XmlReader {
                             candyList.add(new Candy(idCandy, title, Manufacturer));
                             break;
                     }
-                    break;
                 case XMLStreamReader.END_ELEMENT:
-                    break;
             }
         }
         candyList.stream().forEach(System.out::println);
